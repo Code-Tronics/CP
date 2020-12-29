@@ -139,6 +139,7 @@
 .card .bottom-text .btn a:hover{
   transform: scale(0.9);
 }
+
 @media screen and (max-width: 868px) {
   .container{
     flex-wrap: wrap;
@@ -180,55 +181,8 @@
 .navbar.sticky .icon.cancel-btn{
   top: 10px;
 }
-@media (max-width: 868px) {
-  body.disabledScroll{
-    overflow: hidden;
-  }
-  .icon{
-    display: block;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    z-index: 9;
-  }
-  .icon.cancel-btn{
-    display: none;
-  }
-  .icon.cancel-btn.show{
-    display: block;
-  }
-  .icon.hide{
-    display: none;
-  }
-  .navbar .menu-list{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background: #222;
-    display: block;
-    padding: 40px 0;
-    text-align: center;
-    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
-    transition: all 0.3s ease;
-  }
-  .navbar.sticky .menu-list{
-    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
-  }
-  .navbar .menu-list.active{
-    clip-path: circle(75%);
-  }
-  .navbar .menu-list li{
-    margin-top: 45px;
-  }
-  .navbar .menu-list li a{
-    font-size: 23px;
-  }
-}
 
+/*------------------------------------------------------*/
 
 /*footer css*/
 .last_item{
@@ -280,4 +234,64 @@
   width: 45px;
   height: 45px;
   transition: 0.25s;
+}
+
+@media (max-width: 868px) {
+  body.disabledScroll{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .icon.cancel-btn{
+    display: none;
+  }
+  .icon.cancel-btn.show{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #222;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky .menu-list{
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+  .navbar .menu-list.active{
+    clip-path: circle(75%);
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+  }
+
+  /*for footer*/
+  .info{
+    display: block;
+  }
+
+  .name1, .name2{
+    margin: 1%;
+  }
+
+  
 }
